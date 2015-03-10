@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>STAGING R</title>
+<style type="text/css">
+/* Reset body padding and margins */
+body { margin:0; padding:0; }
+ 
+/* Make Header Sticky */
+#header_container { background:#ffffff; border:0px; height:83px; left:0; position:fixed; width:100%; top:0; }
+#header{ line-height:80px; margin:0 auto; width:absolute; text-align:absoluteleft;y-index: 5; 
+     z-index: 0;
+}
+
+ 
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#container { margin:0 auto; overflow:auto; padding:80px 0; width:absolutepx;z-index: 1; }
+#content{}
+ 
+/* Make Footer Sticky */
+#footer_container { background:#eee; border:1px solid #666; bottom:0; height:60px; left:0; position:fixed; width:100%; }
+#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
+
+body
+{
+background: url(img/explorations.svg) top center no-repeat, url(img/explorations-last.svg) top center no-repeat, url(img/explorations-first.svg) top center no-repeat, url(img/explorations-2.svg) top center no-repeat, url(img/mainp.png) top center no-repeat, url(img/bgflow2.png) left top repeat;
+
+
+
+}
+
+#links {
+  position:fixed;
+   top: 10px;
+   right: 9px;
+     z-index: 5;
+
+
+
+
+}
+
+#logo {
+  position:absolute;
+   top: 100px;
+  left: 120px;
+     z-index: 3;
+
+}
+
+
+#logo2 {
+  position:absolute;
+   top: 220px;
+left: 218px;
+letter-spacing: 1px;
+font-size: 14px;
+font-color: #cccccc;
+     z-index: 3;
+
+}
+
+#howitworks {
+  position:absolute;
+   top: 1120px;
+  width: 550px;
+line-height: 24px;
+font-size: 16px;
+font-family: helvetica;
+left: 120px;
+     z-index: 4;
+
+}
+
+#howitworks2 {
+  position:absolute;
+   top: 1000px;
+right: 120px;
+     z-index: 4;
+
+
+
+
+}
+
+#why {
+  position:absolute;
+   top: 310px;
+  width: 500px;
+left: 160px;
+line-height: 24px;
+font-size: 16pt;
+     z-index: 3;
+
+
+}
+
+#ourstory {
+  position:absolute;
+   top: 1680px;
+  width: 100% ;
+  margin-left: auto ;
+  margin-right: auto ;
+     z-index: 3;
+
+}
+
+#photo1 {
+  background: url(img/repcord-photo1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:absolute;
+   top: 0px;
+width: 100%;
+height: 905px;
+ margin-left: auto;
+  margin-right: auto;
+     z-index: 1;
+
+
+
+
+
+
+}
+
+#photo2 {
+ background-color: #000000;
+  position:absolute;
+   top: 860px;
+width: 100%;
+height: 700px;
+ margin-left: auto;
+  margin-right: auto;
+     z-index: 3;
+
+
+
+}
+
+
+#photo3 {
+  background: url(img/repcord-photo2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:absolute;
+   top: 1550px;
+width: 100%;
+height: 905px;
+ margin-left: auto;
+  margin-right: auto;
+     z-index: 4;
+
+
+ }
+
+#photo3text {
+  position:absolute;
+   top: 1810px;
+  width: 500px;
+right: 160px;
+line-height: 24px;
+ text-align: right;
+font-size: 12pt;
+font-family: helvetica;
+     z-index: 4;
+
+  
+
+
+}
+
+#photo4 {
+ background-color: #000000;
+  position:absolute;
+   top: 2260px;
+width: 100%;
+height: 900px;
+ margin-left: auto;
+  margin-right: auto;
+     z-index: 3;
+
+  
+  }
+
+
+
+
+#photo4a {
+  position:absolute;
+   top: 2720px;
+  width: 550px;
+line-height: 24px;
+font-size: 16px;
+font-family: helvetica;
+left: 120px;
+     z-index: 4;
+
+}
+
+#photo4b {
+  position:absolute;
+   top: 2620px;
+right: 120px;
+     z-index: 4;
+
+}
+
+
+#photo5 {
+  background: url(img/photo-end.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:absolute;
+   top: 3150px;
+width: 100%;
+height: 905px;
+ margin-left: auto;
+  margin-right: auto;
+     z-index: 4;
+
+
+ }
+
+#photo5text {
+  position:absolute;
+   top: 3610px;
+  width: 500px;
+right: 160px;
+line-height: 24px;
+ text-align: right;
+font-size: 12pt;
+font-family: helvetica;
+     z-index: 4;
+
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 0.6s;
+-moz-animation-delay:0.6s;
+animation-delay: 0.6s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+ 
+
+</style>
+</head>
+<body>
+
+ 
+<!-- BEGIN: Page Content -->
+
+ <div id="links">
+ <a href=""><img src="img/kickstarter.png" width="170"></a>
+   </div>
+
+
+   <div id="logo" class="box fade-in one">
+ <center><img src="img/repcord-logo.png"></center>
+   </div>
+
+   <div id="logo2" class="box fade-in two">
+<center><font color="ffffff"><font face="helvetica">THE RIGHT REPETITION, THE RIGHT TO REPRESENT</font></font></center>
+   </div>
+
+<div id="howitworks">
+<font color="ffffff"><font face="helvetica"><font size="6">THE REPCORD</font></font><br />
+The RepCord
+
+CrossFit has inspired lots of high intensity training programs -- do the work as fast 
+
+as possible and to do it with a group of people. 
+
+Intense physical work and community support go hand in hand to create an 
+
+intensely addictive physical and emotional feedback loop. 
+
+The intensity of the workouts makes it difficult to keep accurate track of rounds or 
+
+repetitions. 
+
+The RepCord is a simple bracelet you can wear during a workout. You move soft 
+
+silicon, numbered beads to keep track of a completed rounds or repetitions. After 
+
+the workout, athletes can wear the bracelet to as a subtle you are part of a team.
+
+
+   </div>
+
+
+<div id="howitworks2">
+<img src="img/circle-photo1.png">
+</div>
+
+
+<div id="why" class="box fade-in three">
+<center><font color="ffffff"><font face="helvetica">THE REPCORD - a simple bracelet of numbered beads you slide to easily keep
+
+accurate track of the reps or rounds without interrupting the flow of the workout. 
+
+It's right on your wrist - slide a bead and keep working.</font>
+
+<br />
+<br />
+<img src="img/repcord-product.png">
+<br />
+
+
+</div>
+
+<div id="ourstory">
+<center><font color="ffffff"><font face="helvetica"><font size="6">OUR STORY</font></font>
+
+
+</div>
+
+
+   <div id="photo1">
+
+   </div>
+
+  <div id="photo2">
+
+   </div>
+
+
+  <div id="photo3">
+ 
+   </div>
+
+<div id="photo3text">
+<font size="6">CHIPS AND CHALK</font>
+<br />
+Just try to keep track while you rep out front squats and with your heart rate at 190. 
+
+Athletes use poker chips or chalk to keep track but they add time to your workout.
+
+The RepCord is fastened around your wrist. Wear it loose all day and when its 
+
+time to workout, just tighten it down and move a bead over for each rep or round 
+
+completed -- track progress on your wrist, and you are ready for the next round.
+   </div>
+
+
+  <div id="photo4">
+ 
+   </div>
+
+
+ <div id="photo4a">
+ <font size="6">TOUGH STUFF</font>
+<br />
+The patent-pending RepCord is made out of water-resistant 550 military grade 
+
+parachute cord with specially designed beads poured from silicone rubber. We 
+
+numbered the beads to make it easier to know where you stand at a glance.
+   </div>
+
+ <div id="photo4b">
+<img src="img/circle-photo2.png">
+</div>
+
+
+  <div id="photo5">
+ 
+   </div>
+
+
+  <div id="photo5text">
+ <font size="6">MY BOX RULES</font>
+<br />
+After the workout the RepCord stays on our wrist as a subtle reminder that we did 
+
+it together. Everyone has one and we all know who we are. If you wear one you 
+
+understand. If you don't understand - don't sweat it - you don't need one.
+</div>
+
+<!-- END: Page Content -->
+ 
+
+</body>
+</html>
