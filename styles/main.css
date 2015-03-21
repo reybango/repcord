@@ -16,11 +16,6 @@ body { margin:0; padding:0; }
 #footer_container { background:#eee; border:1px solid #666; bottom:0; height:60px; left:0; position:fixed; width:100%; }
 #footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
 
-body
-{
-  background: url(img/explorations.svg) top center no-repeat, url(img/explorations-last.svg) top center no-repeat, url(img/explorations-first.svg) top center no-repeat, url(img/explorations-2.svg) top center no-repeat, url(img/mainp.png) top center no-repeat, url(img/bgflow2.png) left top repeat;
-}
-
 #links {
   position:fixed;
    top: 10px;
@@ -83,7 +78,7 @@ body
 }
 
 #photo1 {
-  background: url(img/repcord-photo1.jpg) no-repeat center center fixed; 
+  background: url(../img/repcord-photo1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -109,7 +104,7 @@ body
 }
 
 #photo3 {
-  background: url(img/repcord-photo2.jpg) no-repeat center center fixed; 
+  background: url(../img/repcord-photo2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -165,7 +160,7 @@ body
 }
 
 #photo5 {
-  background: url(img/photo-end.jpg) no-repeat center center fixed; 
+  background: url(../img/photo-end.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -189,6 +184,63 @@ body
   font-size: 12pt;
   font-family: helvetica;
   z-index: 4;
+}
+
+#photo5form {
+  position:absolute;
+  top: 3500px;
+  width: 500px;
+  left: 100px;
+  line-height: 24px;
+  text-align: left;
+  font-size: 12pt;
+  font-family: helvetica;
+  z-index: 5;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+  width:439px;
+  height:20px;
+  background:#efefef;
+  border:1px solid #dedede;
+  padding:10px;
+  margin-top:3px;
+  font-size:0.9em;
+  color:#3a3a3a;
+}
+
+textarea {
+  height:150px;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+
+#submit {
+    width:127px;
+    height:38px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+  #submit:hover {
+      opacity:.9;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
