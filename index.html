@@ -119,19 +119,22 @@
 <div id="photo5form">
     <font size="6">Contact Us</font>
     <br />
-    <form method="post" action="index.php">
+    <font size="4">Interested in learning more about RepCord? Contact us!</font>
+    <br />
+    <div id="form-messages"></div>
+    <form id="ajax-contact" method="post" action="mailer.php">
         
         <label>Name</label>
-        <input name="name" placeholder="Type Here">
+        <input name="name" id="name" placeholder="Type Here" required>
                 
         <label>Email</label>
-        <input name="email" type="email" placeholder="Type Here">
+        <input name="email" id="email" type="email" placeholder="Type Here" required>
                 
         <label>Message</label>
         <textarea name="message" placeholder="Type Here"></textarea>
-                
-        <input id="submit" name="submit" type="submit" value="Submit">
         
+        <button type="submit" id="submit">Send</button>
+      
     </form>
 </div>
 
@@ -148,6 +151,8 @@
 
 <!-- END: Page Content -->
  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="scripts/app.js"></script>
 
 </body>
 </html>

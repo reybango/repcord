@@ -7,6 +7,39 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4275,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mailer.php",
+			"settings":
+			{
+				"buffer_size": 2066,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 1216,
+				"line_ending": "Unix",
+				"name": "$(function() {"
+			}
+		},
+		{
+			"file": "styles/main.css",
+			"settings":
+			{
+				"buffer_size": 6048,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -40,10 +73,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/rey/Dropbox/Development/RepCord/Site"
+		"/Users/rey/Dropbox/Development/RepCord/Site",
+		"/Users/rey/Dropbox/Development/RepCord/Site/libs",
+		"/Users/rey/Dropbox/Development/RepCord/Site/scripts",
+		"/Users/rey/Dropbox/Development/RepCord/Site/styles"
 	],
 	"file_history":
 	[
+		"/Users/rey/Dropbox/Development/RepCord/Site/styles/main.css",
 		"/Users/rey/Dropbox/Smashing Magazine/Review/ Extend Without Mess in Sass.md",
 		"/Users/rey/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/rey/Dropbox/Development/RepCord/Site/index.html",
@@ -69,7 +106,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -83,6 +120,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font",
 			"self",
 			"Telerik",
 			"telerik",
@@ -104,8 +142,132 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4128,
+								4128
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2092.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mailer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "$(function() {",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "styles/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5612,
+								5612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 4141.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -115,7 +277,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
