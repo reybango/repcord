@@ -19,7 +19,6 @@ $(function() {
 		};
 
 	on_resize(function() {
-		console.log('i fired');
 		if(window.innerWidth < 850){
 			backgrounds.b1.height(contents.c1.outerHeight()).css('background-size','auto 100%');
 			backgrounds.b2.height(contents.c2.outerHeight()).css('top',contents.c2.position().top);
