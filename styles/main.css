@@ -159,29 +159,32 @@ CONTENT BLOCKS
 /* ==========================================================================
 BACKGROUNDS
 ========================================================================== */
+
   .background{
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 905px;
     position:absolute;
     width: 100%;
     z-index: 1;
   }
-
   #background-1 {
-    background: url(../img/repcord-background-1.jpg) no-repeat center center fixed;
+    background-image: url(../img/repcord-background-1.jpg);
     top: 0px;
   }
 
   #background-2 {
-    background: url(../img/repcord-background-2.jpg) no-repeat center center fixed;
+    background-image: url(../img/repcord-background-2.jpg);
     top: 1600px;
   }
 
   #background-3 {
-    background: url(../img/repcord-background-3.jpg) no-repeat center center fixed;
+    background-image: url(../img/repcord-background-3.jpg);
     top: 3200px;
   }
 
@@ -354,17 +357,13 @@ RESPONSIVE
       min-height: 500px;
     }
     .background{
-      display: none;
+      /*display: none;*/
     }
     .content {
       position: relative;
       height: auto;
       top: auto !important;
-      background-color:#444;
       padding:1em;
-    }
-    .content-black{
-      background-color:#000;
     }
     .content > div {
       margin:0 !important;
@@ -375,13 +374,6 @@ RESPONSIVE
     }
     #content-1 {
       padding-top:100px;
-      background: url(../img/repcord-background-1.jpg) no-repeat center center;
-    }
-    #content-3 {
-      background: url(../img/repcord-background-2.jpg) no-repeat center center;
-    }
-    #content-5 {
-      background: url(../img/repcord-background-3.jpg) no-repeat center center;
     }
     #why{
       font-size: 16px;
