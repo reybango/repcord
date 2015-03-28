@@ -1,306 +1,438 @@
 /* Reset body padding and margins */
-body { margin:0; padding:0; }
- 
-/* Make Header Sticky */
-#header_container { background:#ffffff; border:0px; height:83px; left:0; position:fixed; width:100%; top:0; }
-#header{ line-height:80px; margin:0 auto; width:absolute; text-align:absoluteleft;y-index: 5; 
-     z-index: 0;
+body {
+  background-color: #000;
+  color: #fff;
+  margin:0;
+  padding:0;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body,input,textarea,button{
+  /* setting as 1em = 16px of client by default */
+  font:normal 1em/1.4em 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+h1, h2{
+  margin:0;
+  line-height: 1.4em;
+}
+h1 small {
+  font-weight: 300;
+  font-size: .5em;
+  display: block;
+  line-height: 1.4em;
+}
+p {
+  margin:1em 0;
 }
 
- 
-/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
-#container { margin:0 auto; overflow:auto; padding:80px 0; width:absolutepx;z-index: 1; }
-#content{}
- 
-/* Make Footer Sticky */
-#footer_container { background:#eee; border:1px solid #666; bottom:0; height:60px; left:0; position:fixed; width:100%; }
-#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
+/* ==========================================================================
+LINKS
+========================================================================== */
+  #links {
+    position:fixed;
+    top: 10px;
+    right: 9px;
+    z-index: 10;
+  }
 
-#links {
-  position:fixed;
-   top: 10px;
-   right: 9px;
-     z-index: 5;
-}
+  #kickstarter{
+    display: block;
+    width: 170px;
+    height:65px;
+    background: url('../img/kickstarter.png') no-repeat center center;
+    background-size: 170px auto;
+    font-size: 0;
+    text-decoration: none;
+    outline: none;
+  }
 
-#logo {
-  position:absolute;
-   top: 100px;
-  left: 120px;
-     z-index: 3;
-}
+/* ==========================================================================
+CONTENT BLOCKS
+========================================================================== */
+  .content {
+    z-index: 5;
+    position: absolute;
+    width:100%;
+    box-sizing: border-box;
+    height: 905px;
+    padding: 0 120px;
+  }
+  .content-black{
+    background-color: #000;
+    background-position: calc(100% - 120px) center;
+    background-repeat: no-repeat;
+    height: 695px;
+  }
 
-#logo2 {
-  position:absolute;
-  top: 220px;
-  left: 218px;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-color: #cccccc;
-  z-index: 3;
-}
+  /* ==========================================================================
+  CONTENT-1
+  ========================================================================== */
+    #content-1{
+        top:0;
+    }
 
-#howitworks {
-  position:absolute;
-  top: 1120px;
-  width: 550px;
-  line-height: 24px;
-  font-size: 16px;
-  font-family: helvetica;
-  left: 120px;
-  z-index: 4;
-}
+    #content-1 > div {
+      margin:100px 0 0 0;
+      text-align: center;
+      width:600px;
+    }
 
-#howitworks2 {
-  position:absolute;
-  top: 1000px;
-  right: 120px;
-  z-index: 4;
-}
+    #logo {
+      background: url('../img/repcord-logo.png') no-repeat center center;
+      width:600px;
+      height:105px;
+    }
 
-#why {
-  position:absolute;
-  top: 310px;
-  width: 500px;
-  left: 160px;
-  line-height: 24px;
-  font-size: 16pt;
-  z-index: 3;
-}
+    #motto {
+      margin:15px 0 75px;
+    }
 
-#ourstory {
-  position:absolute;
-  top: 1680px;
-  width: 100% ;
-  margin-left: auto ;
-  margin-right: auto ;
-  z-index: 3;
-}
+    #why {
+      font-size: 1.4em;
+      line-height: 1.4em;
+      padding:0 50px 200px;
+      background: url('../img/repcord-product.png') no-repeat bottom center;
+    }
 
-#photo1 {
-  background: url(../img/repcord-photo1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position:absolute;
-  top: 0px;
-  width: 100%;
-  height: 905px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-}
+  /* ==========================================================================
+  CONTENT-2
+  ========================================================================== */
+    #content-2{
+      background-image: url('../img/circle-photo1.png');
+      top: 905px;
+    }
 
-#photo2 {
-  background-color: #000000;
-  position:absolute;
-  top: 860px;
-  width: 100%;
-  height: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 3;
-}
+    #content-2 > div {
+      margin:347.5px 0 0 0;
+      width: 550px;
+      transform: translateY(-50%);
+    }
 
-#photo3 {
-  background: url(../img/repcord-photo2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position:absolute;
-  top: 1550px;
-  width: 100%;
-  height: 905px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 4;
-}
+  /* ==========================================================================
+  CONTENT-3
+  ========================================================================== */
+    #content-3{
+      top: 1600px;
+    }
 
-#photo3text {
-  position:absolute;
-  top: 1810px;
-  width: 500px;
-  right: 160px;
-  line-height: 24px;
-  text-align: right;
-  font-size: 12pt;
-  font-family: helvetica;
-  z-index: 4;
-}
+    #content-3 > div {
+      margin:452.5px 0 0 calc(100% - 500px);
+      transform: translateY(-50%);
+      width: 500px;
+      text-align: right;
+    }
 
-#photo4 {
-  background-color: #000000;
-  position:absolute;
-  top: 2260px;
-  width: 100%;
-  height: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 3;
-}
+  /* ==========================================================================
+  CONTENT-4
+  ========================================================================== */
+    #content-4{
+      background-image: url('../img/circle-photo2.png');
+      top: 2505px;
+    }
 
-#photo4a {
-  position:absolute;
-  top: 2720px;
-  width: 550px;
-  line-height: 24px;
-  font-size: 16px;
-  font-family: helvetica;
-  left: 120px;
-  z-index: 4;
-}
+    #content-4 > div {
+      margin:350px 0 0 0;
+      width: 550px;
+      transform: translateY(-50%);
+    }
 
-#photo4b {
-  position:absolute;
-  top: 2620px;
-  right: 120px;
-  z-index: 4;
-}
+  /* ==========================================================================
+  CONTENT-5
+  ========================================================================== */
+    #content-5{
+      top: 3200px;
+    }
 
-#photo5 {
-  background: url(../img/photo-end.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position:absolute;
-  top: 3150px;
-  width: 100%;
-  height: 905px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 4;
-}
+    #content-5 > div {
+      margin:452.5px 0 0 0;
+      width: 500px;
+      transform: translateY(-50%);
+    }
 
-#photo5text {
-  position:absolute;
-  top: 3610px;
-  width: 500px;
-  right: 160px;
-  line-height: 24px;
-  text-align: right;
-  font-size: 12pt;
-  font-family: helvetica;
-  z-index: 4;
-}
+    #content-5-text{
+      float: right;
+      text-align: right;
+    }
+    #contact-form {
+      float: left;
+    }
 
-#photo5form {
-  position:absolute;
-  top: 3475px;
-  width: 500px;
-  left: 100px;
-  line-height: 24px;
-  text-align: left;
-  font-size: 12pt;
-  font-family: helvetica;
-  z-index: 5;
-}
+/* ==========================================================================
+BACKGROUNDS
+========================================================================== */
+  .background{
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    height: 905px;
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+  }
 
-label {
-    display:block;
-    margin-top:20px;
-    letter-spacing:2px;
-}
+  #background-1 {
+    background: url(../img/repcord-background-1.jpg) no-repeat center center fixed;
+    top: 0px;
+  }
 
-/* Centre the form within the page */
-form {
-    margin:0 auto;
-    width:459px;
-}
+  #background-2 {
+    background: url(../img/repcord-background-2.jpg) no-repeat center center fixed;
+    top: 1600px;
+  }
 
-/* Style the text boxes */
-input, textarea, button {
-  width:439px;
-  height:20px;
-  background:#efefef;
-  border:1px solid #dedede;
-  padding:10px;
-  margin-top:3px;
-  font-size:0.9em;
-  color:#3a3a3a;
-}
+  #background-3 {
+    background: url(../img/repcord-background-3.jpg) no-repeat center center fixed;
+    top: 3200px;
+  }
 
-textarea {
-  height:150px;
-}
+/* ==========================================================================
+FORM
+========================================================================== */
+  form {
+      margin:0;
+  }
 
-input:focus, textarea:focus {
-    border:1px solid #97d6eb;
-}
+  label {
+      display:block;
+      margin:20px 0 5px;
+  }
+
+  input, textarea, button {
+    width:100%;
+    line-height: 1.4em;
+    padding:.63em;
+    height:2.66em;
+    background:#efefef;
+    border:1px solid #dedede;
+    color:#3a3a3a;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height:150px;
+  }
+
+  input:focus, textarea:focus {
+      border:1px solid #97d6eb;
+  }
+
+  #submit {
+      width:127px;
+      height:38px;
+      border:none;
+      margin-top:20px;
+      cursor:pointer;
+  }
+
+  #submit:hover {
+    opacity:.9;
+  }
+
+  .success {
+    padding: 10px;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+  }
+
+  .error {
+    padding: 10px;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #b94a48;
+    background-color: #f2dede;
+    border: 1px solid rgba(185, 74, 72, 0.3);
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+  }
+
+/* ==========================================================================
+ANIMATIONS
+========================================================================== */
+  /* make keyframes that tell the start state and the end state of our object */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  .fade-in {
+      opacity:0;  /* make things invisible upon start */
+      -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+      -moz-animation:fadeIn ease-in 1;
+      animation:fadeIn ease-in 1;
+
+      -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+      -moz-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+
+      -webkit-animation-duration:1s;
+      -moz-animation-duration:1s;
+      animation-duration:1s;
+  }
+
+  .fade-in.one {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+
+  .fade-in.two {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay:0.6s;
+    animation-delay: 0.6s;
+  }
+
+  .fade-in.three {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+  }
+
+/* ==========================================================================
+RESPONSIVE
+========================================================================== */
+
+  @media( max-width:1240px ){
+    .content {
+      padding: 0 60px;
+    }
+    .content-black{
+      background-position: calc(100% - 60px) center;
+    }
+
+    #content-2 > div,
+    #content-4 > div{
+      width:auto;
+      margin-right:480px;
+    }
+
+    #content-5 > div {
+      width: 400px;
+    }
+  }
 
 
-#submit {
-    width:127px;
-    height:38px;
-    border:none;
-    margin-top:20px;
-    cursor:pointer;
-}
+  @media( max-width:990px ){
+    .content {
+      padding: 0 40px;
+    }
+    .content-black{
+      background-position: calc(100% - 40px) center;
+    }
 
-#submit:hover {
-      opacity:.9;
-}
+    #content-5 > div {
+      width: 360px;
+    }
+  }
 
-/* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- 
-.fade-in {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
- 
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
- 
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
-}
- 
-.fade-in.one {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
- 
-.fade-in.two {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay:0.6s;
-  animation-delay: 0.6s;
-}
- 
-.fade-in.three {
-  -webkit-animation-delay: 1.6s;
-  -moz-animation-delay: 1.6s;
-  animation-delay: 1.6s;
-}
 
-.success {
-  padding: 10px;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
+  @media( max-width:850px ){
+    body,input,textarea,button{
+      font-size: 14px;
+    }
+    body{
+      text-shadow: 1px 1px 0 #000;
+    }
+    #links {
+      position:absolute;
+      top: 10px;
+      right: auto;
+      width: 100%;
+      text-align: center;
+    }
+    #links a { margin: auto;}
+    #content-1,#content-3,#content-5{
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      background-size: cover !important;
+      min-height: 500px;
+    }
+    .background{
+      display: none;
+    }
+    .content {
+      position: relative;
+      height: auto;
+      top: auto !important;
+      background-color:#444;
+      padding:1em;
+    }
+    .content-black{
+      background-color:#000;
+    }
+    .content > div {
+      margin:0 !important;
+      width:auto !important;
+      transform:none !important;
+      min-height: 300px;
+      text-align: center !important;
+    }
+    #content-1 {
+      padding-top:100px;
+      background: url(../img/repcord-background-1.jpg) no-repeat center center;
+    }
+    #content-3 {
+      background: url(../img/repcord-background-2.jpg) no-repeat center center;
+    }
+    #content-5 {
+      background: url(../img/repcord-background-3.jpg) no-repeat center center;
+    }
+    #why{
+      font-size: 16px;
+    }
+    #content-2,
+    #content-4{
+      background-size:200px auto;
+      padding-bottom:200px;
+      background-position: bottom center;
+      margin-bottom: 20px;
+    }
+    #content-2 > div ,
+    #content-4 > div {
+      min-height: 0;
+    }
+    #logo{
+      width:auto;
+      max-width:600px;
+      margin:0 auto;
+      background-size: contain;
+    }
+    #motto {
+      margin-bottom:20px;
+    }
+    #content-5-text{
+      float: none;
+      min-height:0;
+      margin-bottom:2em !important;
+      border-bottom:1px solid rgba(255,255,255,.5);
+      padding-bottom: 1em;
+    }
+    #contact-form {
+      float: none;
+      max-width: 500px;
+      margin: 0 auto !important;
+    }
+  }
 
-.error {
-  padding: 10px;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #b94a48;
-  background-color: #f2dede;
-  border: 1px solid rgba(185, 74, 72, 0.3);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
+  @media( max-width:500px ){
+    #motto {
+      margin:0 auto 10px;
+    }
+    #why,
+    #content-2,
+    #content-4{
+      background-size:160px auto;
+      padding-bottom:160px;
+      background-position: bottom center;
+      margin-bottom: 20px;
+    }
+    #why{
+      margin-bottom: 0;
+    }
+  }
