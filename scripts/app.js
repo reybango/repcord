@@ -20,7 +20,7 @@ $(function() {
 
 	on_resize(function() {
 		if(window.innerWidth < 850){
-			backgrounds.b1.height(contents.c1.outerHeight()).css('background-size','auto 100%');
+			backgrounds.b1.height(contents.c1.outerHeight());
 			backgrounds.b2.height(contents.c2.outerHeight()).css('top',contents.c2.position().top);
 			backgrounds.b3.height(contents.c3.outerHeight()).css('top',contents.c3.position().top);
 		} else {
