@@ -92,8 +92,24 @@ CONTENT BLOCKS
     #why {
       font-size: 1.4em;
       line-height: 1.4em;
-      padding:0 50px 200px;
-      background: url('../img/repcord-product.png') no-repeat bottom center;
+      padding:0 50px 280px;
+      background: url('../img/repcord-product.png') no-repeat center calc( 100% - 80px);
+      position: relative;
+    }
+
+    #why a {
+      display: block;
+      background-color: #FF6A02;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: absolute;
+      padding:.5em 1em;
+      font-size: 1rem;
+      border-radius: .5em;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
     }
 
     #video {
@@ -426,6 +442,9 @@ RESPONSIVE
     #why{
       font-size: 16px;
     }
+    #why a{
+      bottom:1em;
+    }
     #video{
       position: relative;
       max-width:400px;
@@ -482,5 +501,10 @@ RESPONSIVE
     }
     #why{
       margin-bottom: 0;
+      background-position: center calc( 100% - 60px);
+      padding-bottom:220px;
+    }
+    #why a{
+      bottom:0;
     }
   }
