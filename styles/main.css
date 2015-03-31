@@ -110,6 +110,8 @@ CONTENT BLOCKS
       bottom:0;
       left:50%;
       transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
     }
 
     #video {
@@ -146,6 +148,8 @@ CONTENT BLOCKS
       margin:347.5px 0 0 0;
       width: 550px;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
     }
 
   /* ==========================================================================
@@ -158,6 +162,8 @@ CONTENT BLOCKS
     #content-3 > div {
       margin:452.5px 0 0 calc(100% - 500px);
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       width: 500px;
       text-align: right;
     }
@@ -174,6 +180,8 @@ CONTENT BLOCKS
       margin:350px 0 0 0;
       width: 550px;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
     }
 
   /* ==========================================================================
@@ -187,6 +195,8 @@ CONTENT BLOCKS
       margin:452.5px 0 0 0;
       width: 500px;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
     }
 
     #content-5-text{
@@ -433,6 +443,8 @@ RESPONSIVE
       margin:0 !important;
       width:auto !important;
       transform:none !important;
+      -webkit-transform: none !important;
+      -ms-transform: none !important;
       min-height: 300px;
       text-align: center !important;
     }
