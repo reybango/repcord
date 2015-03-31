@@ -4,7 +4,6 @@ body {
   color: #fff;
   margin:0;
   padding:0;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 body,input,textarea,button{
   /* setting as 1em = 16px of client by default */
