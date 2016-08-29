@@ -33,16 +33,6 @@ LINKS
     z-index: 10;
   }
 
-  #kickstarter{
-    display: block;
-    width: 170px;
-    height:65px;
-    background: url('../img/kickstarter.png') no-repeat center center;
-    background-size: 170px auto;
-    font-size: 0;
-    text-decoration: none;
-    outline: none;
-  }
 
 /* ==========================================================================
 CONTENT BLOCKS
