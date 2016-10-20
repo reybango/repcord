@@ -82,7 +82,7 @@ CONTENT BLOCKS
       font-size: 1.4em;
       line-height: 1.4em;
       padding:0 50px 280px;
-      background: url('../img/repcord-product.png') no-repeat center calc( 100% - 80px);
+      background: url('../img/repcord-product-2.png') no-repeat center calc( 100% - 80px);
       position: relative;
     }
 
@@ -519,3 +519,22 @@ RESPONSIVE
       bottom:0;
     }
   }
+
+.button-store {
+     background-color: #2980b9;
+     border: 0;
+     border-radius: 10px;
+     color: #fff;
+     padding: 10px 20px; 
+}
+
+.button-store:hover {
+     background: #468847;
+     color: #fff;
+     text-decoration: none;  
+}
+
+ .store-btn {
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
